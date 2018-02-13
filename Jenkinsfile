@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Stage') {
+    stage('Deploy') {
+      agent any
       steps {
-        pwd(tmp: true)
+        sh 'ls -la'
       }
     }
   }
