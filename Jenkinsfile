@@ -4,7 +4,9 @@ pipeline {
     stage('Deploy') {
       agent any
       steps {
-        sh 'ls -la'
+        sh '''bash
+ls -la
+'''
       }
     }
   }
